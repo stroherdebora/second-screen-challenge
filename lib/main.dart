@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:second_screen_challenge/screens/home_page.dart';
+import 'package:second_screen_challenge/screens/registration_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +14,14 @@ class MyApp extends StatelessWidget {
       title: 'Second Screen Challange',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+              fontSize: 40.0,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 52, 6, 255)),
+        ),
       ),
-      home: const HomePage(),
+      home: const RegistrationPage(),
     );
   }
 }

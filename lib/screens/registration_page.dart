@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class RegistrationPage extends StatelessWidget {
+  const RegistrationPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +28,23 @@ class HomePage extends StatelessWidget {
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(50.0),
                 topRight: Radius.circular(50.0),
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 52, top: 72, right: 52),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Get Started',
+                        style: Theme.of(context).textTheme.headline1,
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
