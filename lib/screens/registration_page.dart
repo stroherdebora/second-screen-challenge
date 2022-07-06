@@ -6,6 +6,13 @@ class RegistrationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TemplateWidget(mainText: 'Get Started');
+    return Material(
+      child: TemplateWidget(
+        mainText: 'Get Started',
+        nome: '',
+        email: '',
+        password: '',
+      ),
+    );
   }
 }

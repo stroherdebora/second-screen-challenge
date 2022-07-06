@@ -7,6 +7,11 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TemplateWidget(mainText: 'Welcome back');
+    return TemplateWidget(
+      mainText: 'Welcome back',
+      nome: '',
+      email: '',
+      password: '',
+    );
   }
 }
